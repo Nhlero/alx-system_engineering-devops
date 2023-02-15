@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -n '1~2p' $1
+i=1; while read line; do ((i++ % 2)) && echo "$line"; done < input.txt
