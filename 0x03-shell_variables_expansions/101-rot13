@@ -1,0 +1,6 @@
+#!/bin/bash
+if [[ $1 == "encode" ]]; then
+    tr 'A-Za-z' 'N-ZA-Mn-za-m'
+elif [[ $1 == "decode" ]]; then
+    tr 'N-ZA-Mn-za-m' 'A-Za-z'
+fi
